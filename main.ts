@@ -1,6 +1,8 @@
 /**
  * mqMusic blocks
  */
+//% weight=100 color=#5c2d91 icon=""
+//% groups=['Music','others']
 namespace mqlib {
     export function playMusicByAry(array: number[][]) {
         for (let v of array) {
