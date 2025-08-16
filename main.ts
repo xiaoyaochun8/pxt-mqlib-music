@@ -83,6 +83,7 @@ namespace mqlib {
     }
 
     //% subcategory="音乐"
+    //% block
     export function musicPlay(): void {
         // if (oledPic == OledPic2.P4) {
         //     mqlib.oledDrawPicBy1024Hex(imOledPerson_P42)
@@ -124,6 +125,6 @@ namespace mqlib {
             [22, 1],
             [0, 1],
         ]
-        mqlib.playMusicByAry(text_list)
+        playMusicByAry(text_list)
     }
 }
