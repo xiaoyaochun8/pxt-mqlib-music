@@ -1,6 +1,12 @@
 /**
  * mqMusic blocks
  */
+
+enum MqMusicList {
+    //% block="小星星"
+    s1 = 1
+}
+
 //% weight=100 color=#5c2d91 icon=""
 //% groups=['Music','others']
 namespace mqlib {
@@ -84,47 +90,45 @@ namespace mqlib {
 
     //% subcategory="音乐"
     //% block
-    export function musicPlay(): void {
-        // if (oledPic == OledPic2.P4) {
-        //     mqlib.oledDrawPicBy1024Hex(imOledPerson_P42)
-        // } else if (oledPic == OledPic2.P5) {
-        //     mqlib.oledDrawPicBy1024Hex(imOledPerson_P52)
-        // }
+    export function musicPlay(mqMusic: MqMusicList): void {
+        if (mqMusic == MqMusicList.s1) {
+            let text_list = [
+                [21, 1],
+                [21, 1],
+                [25, 1],
+                [25, 1],
+                [26, 1],
+                [26, 1],
+                [25, 1],
+                [0, 1],
+                [24, 1],
+                [24, 1],
+                [23, 1],
+                [23, 1],
+                [22, 1],
+                [22, 1],
+                [21, 1],
+                [0, 1],
+                [25, 1],
+                [25, 1],
+                [24, 1],
+                [24, 1],
+                [23, 1],
+                [23, 1],
+                [22, 1],
+                [0, 1],
+                [25, 1],
+                [25, 1],
+                [24, 1],
+                [24, 1],
+                [23, 1],
+                [23, 1],
+                [22, 1],
+                [0, 1],
+            ]
+            playMusicByAry(text_list)
+        } else {
+        }
 
-        let text_list = [
-            [21, 1],
-            [21, 1],
-            [25, 1],
-            [25, 1],
-            [26, 1],
-            [26, 1],
-            [25, 1],
-            [0, 1],
-            [24, 1],
-            [24, 1],
-            [23, 1],
-            [23, 1],
-            [22, 1],
-            [22, 1],
-            [21, 1],
-            [0, 1],
-            [25, 1],
-            [25, 1],
-            [24, 1],
-            [24, 1],
-            [23, 1],
-            [23, 1],
-            [22, 1],
-            [0, 1],
-            [25, 1],
-            [25, 1],
-            [24, 1],
-            [24, 1],
-            [23, 1],
-            [23, 1],
-            [22, 1],
-            [0, 1],
-        ]
-        playMusicByAry(text_list)
     }
 }
