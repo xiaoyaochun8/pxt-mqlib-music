@@ -2,7 +2,7 @@
  * mqMusic blocks
  */
 namespace mqlib {
-    function playMusicByAry(array: number[][]) {
+    export function playMusicByAry(array: number[][]) {
         for (let v of array) {
             let a = v[0]
             let b = v[1]
@@ -122,6 +122,6 @@ namespace mqlib {
             [22, 1],
             [0, 1],
         ]
-        mqlib.playMusic(text_list)
+        mqlib.playMusicByAry(text_list)
     }
 }
