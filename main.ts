@@ -2,20 +2,21 @@
  * mqMusic blocks
  */
 
-enum MqMusicList {
-    //% block="小星星"
-    s1 = 1,
-    //% block="强军战歌"
-    s2 = 2,
-    //% block="加油鸭"
-    s3 = 3,
-    //% block="走进新时代"
-    s4 = 4
-}
-
 //% weight=100 color=#5c2d91 icon=""
 //% groups=['Music','others']
 namespace mqlib {
+
+    enum MusicList {
+        //% block="小星星"
+        s1 = 1,
+        //% block="强军战歌"
+        s2 = 2,
+        //% block="加油鸭"
+        s3 = 3,
+        //% block="走进新时代"
+        s4 = 4
+    }
+
     export function playMusicByAry(array: number[][]) {
         for (let v of array) {
             let a = v[0]
@@ -96,8 +97,8 @@ namespace mqlib {
 
     //% subcategory="音乐"
     //% block
-    export function musicPlay(mqMusic: MqMusicList): void {
-        if (mqMusic == MqMusicList.s1) {
+    export function musicPlay(mqMusic: MusicList): void {
+        if (mqMusic == MusicList.s1) {
             let text_list = [
                 [21, 1],
                 [21, 1],
@@ -133,7 +134,7 @@ namespace mqlib {
                 [0, 1],
             ]
             playMusicByAry(text_list)
-        } else if (mqMusic == MqMusicList.s2) {
+        } else if (mqMusic == MusicList.s2) {
             let text_list = [
                 [31, 12],
                 [32, 12],
@@ -215,7 +216,7 @@ namespace mqlib {
                 [31, 1],
             ]
             playMusicByAry(text_list)
-        } else if (mqMusic == MqMusicList.s3) {
+        } else if (mqMusic == MusicList.s3) {
             let text_list = [
                 [23, 12],
                 [23, 12],
@@ -263,7 +264,7 @@ namespace mqlib {
                 [1, 1]
             ]
             playMusicByAry(text_list)
-        } else if (mqMusic == MqMusicList.s4) {
+        } else if (mqMusic == MusicList.s4) {
             let text_list = [
                 [31, 1],
                 [31, 18],
