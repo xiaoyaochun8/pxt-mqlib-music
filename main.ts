@@ -96,7 +96,7 @@ namespace mqlib {
     }
 
     //% subcategory="音乐"
-    //% block
+    //% block="播放microbit歌曲 $music"
     export function musicPlay(mqMusic: MusicList): void {
         if (mqMusic == MusicList.s1) {
             let text_list = [
