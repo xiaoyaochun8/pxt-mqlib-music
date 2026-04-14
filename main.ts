@@ -6,7 +6,7 @@
 //% groups=['Music','others']
 namespace mqlib {
 
-    enum MusicList {
+    export enum MusicList {
         //% block="小星星"
         s1 = 1,
         //% block="强军战歌"
