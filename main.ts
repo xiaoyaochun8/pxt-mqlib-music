@@ -17,7 +17,7 @@ namespace mqlib {
         s4 = 4
     }
 
-    export function playMusicByAry(array: number[][]) {
+    function playMusicByAry(array: number[][]) {
         for (let v of array) {
             let a = v[0]
             let b = v[1]
@@ -96,7 +96,7 @@ namespace mqlib {
     }
 
     //% subcategory="音乐"
-    //% block="播放microbit歌曲 $music"
+    //% block="播放microbit歌曲 $mqMusic"
     export function musicPlay(mqMusic: MusicList): void {
         if (mqMusic == MusicList.s1) {
             let text_list = [
